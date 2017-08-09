@@ -83,7 +83,7 @@ const MegaMenu = (($) => {
       this._$goForwardLinks.on('click', (event) => this._goForward(event))
       this._$goBackLinks.on('click', (event) => this._goBackward(event))
       this._$navLinks.on('keydown', (event) => this._manageKeyDown(event))
-      this._$topCollapseMenus.on('shown.bs.collapse', this._collapseFocus)
+      // this._$topCollapseMenus.on('shown.bs.collapse', this._collapseFocus)
       this._$navLinkCollapses.on('click', (event) => this._handleCollapseToggle(event))
     }
 
@@ -177,6 +177,7 @@ const MegaMenu = (($) => {
       setTimeout(() =>  {
         // set focus on target link
         $target.trigger('focus')
+        //   $target.trigger('focus')
 
         $rootNav.removeClass(ClassName.TRANSITIONING)
       }, TIMEOUT)

@@ -88,7 +88,7 @@ var MegaMenu = function ($) {
       this._$navLinks.on('keydown', function (event) {
         return _this._manageKeyDown(event);
       });
-      this._$topCollapseMenus.on('shown.bs.collapse', this._collapseFocus);
+      // this._$topCollapseMenus.on('shown.bs.collapse', this._collapseFocus)
       this._$navLinkCollapses.on('click', function (event) {
         return _this._handleCollapseToggle(event);
       });
@@ -184,6 +184,7 @@ var MegaMenu = function ($) {
       setTimeout(function () {
         // set focus on target link
         $target.trigger('focus');
+        //   $target.trigger('focus')
 
         $rootNav.removeClass(ClassName.TRANSITIONING);
       }, TIMEOUT);
