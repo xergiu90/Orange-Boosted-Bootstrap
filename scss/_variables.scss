@@ -938,6 +938,18 @@ $alert-bg-level:              0 !default;
 $alert-border-level:          0 !default;
 // $alert-color-level:        0 !default; // Not used by boosted
 
+//Boosted mod
+//
+//Custom Range
+
+$slider-bg: $gray-500 !default;
+$slider-border-radius: $border-radius !default;
+$slider-width: 100% !default;
+$slider-height: .5rem !default;
+$slider-border-radius: 1rem !default;
+$tickmark-height: .5rem !default;
+$tickmark-padding-left: .25rem !default;
+$ticmark-border-right: .1rem !default;
 
 // Progress bars
 

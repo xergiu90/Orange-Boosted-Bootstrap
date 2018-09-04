@@ -1,0 +1,50 @@
+.slidecontainer {
+  width: $slider-width;
+}
+
+.slider {
+  width: $slider-width;
+  height: $slider-height;
+  background: $slider-bg;
+  border-radius: $slider-border-radius;
+  outline: none;
+  opacity: .7;
+  transition: .2s;
+  appearance: none;
+}
+
+datalist {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  option::before {
+    display: block;
+    width: 0;
+    height: $tickmark-height;
+    padding-left: $tickmark-padding-left;
+    content: "";
+    border-right: $ticmark-border-right solid $slider-bg;
+  }
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  background: $primary;
+  border-radius: 20%;
+  appearance: none;
+}
+
+.slider::-moz-range-thumb {
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  background: $primary;
+  border-radius: 20%;
+  appearance: none;
+}
